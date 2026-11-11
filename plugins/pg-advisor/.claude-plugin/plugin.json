@@ -1,0 +1,16 @@
+{
+  "name": "pg-advisor",
+  "version": "0.1.0",
+  "description": "Startup decision advisor grounded in Paul Graham's essays, with a time check that flags which of his assumptions have changed since he wrote, especially since AI. Lenses for ideas, survival and fundraising.",
+  "author": {
+    "name": "MattVOLTA"
+  },
+  "license": "MIT",
+  "keywords": [
+    "startups",
+    "fundraising",
+    "paul-graham",
+    "advice",
+    "skills"
+  ]
+}

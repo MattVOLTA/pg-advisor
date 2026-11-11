@@ -1,0 +1,405 @@
+{
+ "skill_name": "pg-advisor",
+ "evals": [
+  {
+   "id": 1,
+   "name": "seed-offer-ai-app",
+   "prompt": "We're 2 founders building an AI tool that handles insurance claim paperwork for dental clinics. We're at $18k MRR, growing about 12% a month, and we have about 9 months of runway from our own savings. A seed fund has offered $3M at a $15M post-money valuation. Should we take it? And honestly how much should we even be raising right now?",
+   "expected_output": "Uses fundraising and survival lenses. Applies the equity test (20% dilution must raise expected outcome by more than 1.25x). Checks default alive and how close they are to ramen profitable. Time check: building is cheaper (P1/P3 amplified, raise less) but AI compute cost per use (P5 weakened) means checking gross margin. Clear recommendation.",
+   "assertions": [
+    {
+     "name": "G1",
+     "text": "Time check: states for at least one Graham argument used whether its underlying assumption still holds today or has changed"
+    },
+    {
+     "name": "G2",
+     "text": "Cites at least two Graham essays by title with year"
+    },
+    {
+     "name": "G3",
+     "text": "Commits to a clear recommendation rather than only listing considerations"
+    },
+    {
+     "name": "G4",
+     "text": "Gives a concrete, cheap next step or test the founder can do this week"
+    },
+    {
+     "name": "G5",
+     "text": "Distinguishes Graham's own claims from the advisor's inference where it extrapolates beyond what he wrote"
+    },
+    {
+     "name": "G6",
+     "text": "No fabricated quotes: any sentence in quotation marks attributed to Graham appears verbatim in his essays (checked by script)"
+    },
+    {
+     "name": "S1a",
+     "text": "Applies the equity test to the offer: selling 20% must raise the expected outcome by more than 1.25x"
+    },
+    {
+     "name": "S1b",
+     "text": "Raises cost per use (compute/gross margin) as a check on the AI product's economics"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "model-training-capital",
+   "prompt": "We're training a specialised foundation model for protein design. Realistically we need around $40M of compute over the next 18 months to get to a model that's competitive. Investors keep telling us to raise an $8M seed first and prove things out. Paul Graham always says raise as little as you need \u2014 so should we push back and go for less, or what?",
+   "expected_output": "Recognises that PG's raise-little logic rested on money not buying speed (P2), which is reversed for model-training companies. Says so explicitly with essay and year. Still applies what holds: start with a cheaper subset and expand (guidetoinvestors 2007), investor herd dynamics. Does not simply repeat 'raise as little as possible'.",
+   "assertions": [
+    {
+     "name": "G1",
+     "text": "Time check: states for at least one Graham argument used whether its underlying assumption still holds today or has changed"
+    },
+    {
+     "name": "G2",
+     "text": "Cites at least two Graham essays by title with year"
+    },
+    {
+     "name": "G3",
+     "text": "Commits to a clear recommendation rather than only listing considerations"
+    },
+    {
+     "name": "G4",
+     "text": "Gives a concrete, cheap next step or test the founder can do this week"
+    },
+    {
+     "name": "G5",
+     "text": "Distinguishes Graham's own claims from the advisor's inference where it extrapolates beyond what he wrote"
+    },
+    {
+     "name": "G6",
+     "text": "No fabricated quotes: any sentence in quotation marks attributed to Graham appears verbatim in his essays (checked by script)"
+    },
+    {
+     "name": "S2a",
+     "text": "Says explicitly that Graham's raise-as-little-as-possible logic does not transfer to compute-heavy model training because money now buys speed"
+    },
+    {
+     "name": "S2b",
+     "text": "Still applies at least one piece of Graham's advice that holds (e.g. start with a cheaper subset, or how to run the raise)"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": "hire-while-default-dead",
+   "prompt": "Burn is $140k/month, we have $900k in the bank, revenue is $40k MRR growing roughly 4% a month. Board wants us to hire 3 more engineers to speed up the roadmap. I'm inclined to agree. Thoughts?",
+   "expected_output": "Uses survival lens. Calculates default alive/dead with the numbers (likely default dead), names the fatal pinch, advises against hiring now. Time check: small teams are amplified by AI tools (P3), strengthening the case against hiring. Shows the calculation.",
+   "assertions": [
+    {
+     "name": "G1",
+     "text": "Time check: states for at least one Graham argument used whether its underlying assumption still holds today or has changed"
+    },
+    {
+     "name": "G2",
+     "text": "Cites at least two Graham essays by title with year"
+    },
+    {
+     "name": "G3",
+     "text": "Commits to a clear recommendation rather than only listing considerations"
+    },
+    {
+     "name": "G4",
+     "text": "Gives a concrete, cheap next step or test the founder can do this week"
+    },
+    {
+     "name": "G5",
+     "text": "Distinguishes Graham's own claims from the advisor's inference where it extrapolates beyond what he wrote"
+    },
+    {
+     "name": "G6",
+     "text": "No fabricated quotes: any sentence in quotation marks attributed to Graham appears verbatim in his essays (checked by script)"
+    },
+    {
+     "name": "S3a",
+     "text": "Calculates default alive/dead from the founder's numbers (about 9 months runway, default dead) and shows the numbers"
+    },
+    {
+     "name": "S3b",
+     "text": "Recommends against hiring the three engineers now"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "crowded-ai-email-idea",
+   "prompt": "I want to start a company building an AI agent that writes marketing emails for small businesses. There are already a bunch of competitors but I'm pretty sure we can build it better. Is this a good idea?",
+   "expected_output": "Uses idea lens. Questions whether founder has the problem (organic vs made-up idea). Time check: 'better product as durable edge' (P7) is weakened and PG himself says so in The Brand Age / Making Startups Powerful (2026); asks what would make them powerful. Gives a verdict, not just questions.",
+   "assertions": [
+    {
+     "name": "G1",
+     "text": "Time check: states for at least one Graham argument used whether its underlying assumption still holds today or has changed"
+    },
+    {
+     "name": "G2",
+     "text": "Cites at least two Graham essays by title with year"
+    },
+    {
+     "name": "G3",
+     "text": "Commits to a clear recommendation rather than only listing considerations"
+    },
+    {
+     "name": "G4",
+     "text": "Gives a concrete, cheap next step or test the founder can do this week"
+    },
+    {
+     "name": "G5",
+     "text": "Distinguishes Graham's own claims from the advisor's inference where it extrapolates beyond what he wrote"
+    },
+    {
+     "name": "G6",
+     "text": "No fabricated quotes: any sentence in quotation marks attributed to Graham appears verbatim in his essays (checked by script)"
+    },
+    {
+     "name": "S4a",
+     "text": "Says a better product alone is not a durable edge, citing Graham's 2026 essays (The Brand Age or Making Startups Powerful)"
+    },
+    {
+     "name": "S4b",
+     "text": "Gives a verdict on the idea, not only questions"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "boring-schlep-idea",
+   "prompt": "I'm looking at a startup that handles customs paperwork for small importers. It's incredibly tedious, full of regulations that change all the time. Friends say it's boring and I should do something in AI instead. Worth pursuing?",
+   "expected_output": "Uses idea lens. Applies schlep blindness / unsexy filter as a positive signal. Time check: AI makes paperwork itself easier to automate, so the defensible schlep shifts to regulation, integrations, trust \u2014 labelled as judgement. Notes chasing AI because it's fashionable is the opposite of PG's advice.",
+   "assertions": [
+    {
+     "name": "G1",
+     "text": "Time check: states for at least one Graham argument used whether its underlying assumption still holds today or has changed"
+    },
+    {
+     "name": "G2",
+     "text": "Cites at least two Graham essays by title with year"
+    },
+    {
+     "name": "G3",
+     "text": "Commits to a clear recommendation rather than only listing considerations"
+    },
+    {
+     "name": "G4",
+     "text": "Gives a concrete, cheap next step or test the founder can do this week"
+    },
+    {
+     "name": "G5",
+     "text": "Distinguishes Graham's own claims from the advisor's inference where it extrapolates beyond what he wrote"
+    },
+    {
+     "name": "G6",
+     "text": "No fabricated quotes: any sentence in quotation marks attributed to Graham appears verbatim in his essays (checked by script)"
+    },
+    {
+     "name": "S5a",
+     "text": "Treats the tedium as a potentially positive signal (schlep blindness / unsexy filter)"
+    },
+    {
+     "name": "S5b",
+     "text": "Notes that AI changes which schleps protect a company, labelled as the advisor's judgement"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "flat-pivot-or-persist",
+   "prompt": "18 months into a B2B analytics startup. 6 paying customers, revenue has been flat for 5 months. My cofounder wants to pivot to 'something with AI'. I'm torn \u2014 PG says startups die when founders give up, but also flat isn't great. Keep going or pivot?",
+   "expected_output": "Uses survival (and idea) lens. Distinguishes persistence from obstinacy (persistence 2024, die 2007). Uses growth rate as the compass (growth 2012). Treats 'pivot to something with AI' as unfocused / fashion rather than a real idea. Recommends talking to the 6 customers and a concrete test.",
+   "assertions": [
+    {
+     "name": "G1",
+     "text": "Time check: states for at least one Graham argument used whether its underlying assumption still holds today or has changed"
+    },
+    {
+     "name": "G2",
+     "text": "Cites at least two Graham essays by title with year"
+    },
+    {
+     "name": "G3",
+     "text": "Commits to a clear recommendation rather than only listing considerations"
+    },
+    {
+     "name": "G4",
+     "text": "Gives a concrete, cheap next step or test the founder can do this week"
+    },
+    {
+     "name": "G5",
+     "text": "Distinguishes Graham's own claims from the advisor's inference where it extrapolates beyond what he wrote"
+    },
+    {
+     "name": "G6",
+     "text": "No fabricated quotes: any sentence in quotation marks attributed to Graham appears verbatim in his essays (checked by script)"
+    },
+    {
+     "name": "S6a",
+     "text": "Distinguishes persistence from obstinacy or uses growth rate as the compass"
+    },
+    {
+     "name": "S6b",
+     "text": "Treats 'pivot to something with AI' as not yet a real idea / fashion-driven"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "name": "word-of-mouth-trap",
+   "prompt": "Paul Graham said marketing is pretty much irrelevant because good products spread by word of mouth. So we're planning to spend zero on distribution and just focus on making the product great. That's the right call, right?",
+   "expected_output": "Identifies the claim (Hiring is Obsolete, 2005) and that it rests on free distribution (P6), which is weakened today. Pushes back. Points to do things that don't scale (2013) as PG's own later, more specific guidance on getting users.",
+   "assertions": [
+    {
+     "name": "G1",
+     "text": "Time check: states for at least one Graham argument used whether its underlying assumption still holds today or has changed"
+    },
+    {
+     "name": "G2",
+     "text": "Cites at least two Graham essays by title with year"
+    },
+    {
+     "name": "G3",
+     "text": "Commits to a clear recommendation rather than only listing considerations"
+    },
+    {
+     "name": "G4",
+     "text": "Gives a concrete, cheap next step or test the founder can do this week"
+    },
+    {
+     "name": "G5",
+     "text": "Distinguishes Graham's own claims from the advisor's inference where it extrapolates beyond what he wrote"
+    },
+    {
+     "name": "G6",
+     "text": "No fabricated quotes: any sentence in quotation marks attributed to Graham appears verbatim in his essays (checked by script)"
+    },
+    {
+     "name": "S7a",
+     "text": "Identifies the claim as coming from an early essay (Hiring is Obsolete, 2005) or explicitly as period-specific"
+    },
+    {
+     "name": "S7b",
+     "text": "Pushes back on zero distribution effort, citing do-things-that-don't-scale or equivalent later Graham advice"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "name": "out-of-scope-employee-equity",
+   "prompt": "Should I give my first engineer 1% or 2% equity? What would Paul Graham say?",
+   "expected_output": "Says the advisor has no lens for employee equity and PG wrote little directly on employee grants. Does not invent a PG position. May mention related essays honestly (e.g. the equity equation is about selling stock to investors, not employee grants).",
+   "assertions": [
+    {
+     "name": "G1",
+     "text": "Time check: states for at least one Graham argument used whether its underlying assumption still holds today or has changed"
+    },
+    {
+     "name": "G2",
+     "text": "Cites at least two Graham essays by title with year"
+    },
+    {
+     "name": "G3",
+     "text": "Commits to a clear recommendation rather than only listing considerations"
+    },
+    {
+     "name": "G4",
+     "text": "Gives a concrete, cheap next step or test the founder can do this week"
+    },
+    {
+     "name": "G5",
+     "text": "Distinguishes Graham's own claims from the advisor's inference where it extrapolates beyond what he wrote"
+    },
+    {
+     "name": "G6",
+     "text": "No fabricated quotes: any sentence in quotation marks attributed to Graham appears verbatim in his essays (checked by script)"
+    },
+    {
+     "name": "S8a",
+     "text": "Does not attribute a specific 1% vs 2% recommendation to Graham"
+    },
+    {
+     "name": "S8b",
+     "text": "Any Graham reasoning used is correctly tied to The Equity Equation (2007) or flagged as outside his writing"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "name": "ramen-profitable-solo",
+   "prompt": "Solo founder, AI drafting tool for small law firms. $6k MRR, my living costs are about $5k a month, growing maybe 8% month on month. Do I even need to raise?",
+   "expected_output": "Uses survival and fundraising lenses. Recognises ramen profitability and the freedom it gives (ramenprofitable 2009). Time check: compute cost per use (P5) \u2014 check margin, not just revenue vs living costs. Founder leverage amplified for lean AI apps (P8 split). Recommendation with a test.",
+   "assertions": [
+    {
+     "name": "G1",
+     "text": "Time check: states for at least one Graham argument used whether its underlying assumption still holds today or has changed"
+    },
+    {
+     "name": "G2",
+     "text": "Cites at least two Graham essays by title with year"
+    },
+    {
+     "name": "G3",
+     "text": "Commits to a clear recommendation rather than only listing considerations"
+    },
+    {
+     "name": "G4",
+     "text": "Gives a concrete, cheap next step or test the founder can do this week"
+    },
+    {
+     "name": "G5",
+     "text": "Distinguishes Graham's own claims from the advisor's inference where it extrapolates beyond what he wrote"
+    },
+    {
+     "name": "G6",
+     "text": "No fabricated quotes: any sentence in quotation marks attributed to Graham appears verbatim in his essays (checked by script)"
+    },
+    {
+     "name": "S9a",
+     "text": "Recognises the founder is at or near ramen profitability and what that buys"
+    },
+    {
+     "name": "S9b",
+     "text": "Checks margin after compute/usage costs rather than revenue versus living costs alone"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "name": "stalled-raise",
+   "prompt": "We've had about 25 investor meetings over 3 months. Lots of 'keep us posted' and 'we'd love to see more traction'. One fund says they're 'very interested' but hasn't sent terms after 3 weeks. What should we do?",
+   "expected_output": "Uses fundraising lens. Applies 'treat anything short of yes as no' and parallel process (How to Raise Money 2013), investor herd/momentum (2013). Time check: these rest on investor psychology, which holds \u2014 says so. Recommends getting back to the business, a deadline, and survival check.",
+   "assertions": [
+    {
+     "name": "G1",
+     "text": "Time check: states for at least one Graham argument used whether its underlying assumption still holds today or has changed"
+    },
+    {
+     "name": "G2",
+     "text": "Cites at least two Graham essays by title with year"
+    },
+    {
+     "name": "G3",
+     "text": "Commits to a clear recommendation rather than only listing considerations"
+    },
+    {
+     "name": "G4",
+     "text": "Gives a concrete, cheap next step or test the founder can do this week"
+    },
+    {
+     "name": "G5",
+     "text": "Distinguishes Graham's own claims from the advisor's inference where it extrapolates beyond what he wrote"
+    },
+    {
+     "name": "G6",
+     "text": "No fabricated quotes: any sentence in quotation marks attributed to Graham appears verbatim in his essays (checked by script)"
+    },
+    {
+     "name": "S10a",
+     "text": "Treats the non-commitments as no (anything short of a definite offer)"
+    },
+    {
+     "name": "S10b",
+     "text": "Time check confirms this advice rests on investor behaviour, which still holds"
+    }
+   ]
+  }
+ ]
+}
